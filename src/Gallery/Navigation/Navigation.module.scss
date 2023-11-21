@@ -1,0 +1,38 @@
+.navigation {
+  background: rgba(185, 184, 226, 4);
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-flex;
+  gap: 5px;
+
+  &Btn {
+    min-width: 45px;
+    display: block;
+    height: 45px;
+    border: none;
+    padding: 0;
+    background: #003049 url("/arrow-left.svg") no-repeat center center;
+    background-size: 52% auto;
+    transition: opacity 0.3s, background-color 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &Right {
+      background-image: url("/arrow-right.svg");
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:disabled {
+      background-color: transparent;
+      cursor: default;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
