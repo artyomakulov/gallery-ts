@@ -1,7 +1,8 @@
 .gallery {
-  user-select: none;
+  // user-select: none;
 
   &Container {
+    position: relative;
     margin-bottom: 5px;
   }
 
